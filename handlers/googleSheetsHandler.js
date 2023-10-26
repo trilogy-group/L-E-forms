@@ -1,7 +1,7 @@
 import { google } from 'googleapis';
 
 const sheets = google.sheets('v4');
-const SPREADSHEET_ID = '1Yp4U0r5OytxNaSXuHdB9JTjIoVSySiLsuU4hKMJtVpk';
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = "Sheet1";
 const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY.replace(/\\n/g, '\n');
